@@ -1,7 +1,6 @@
 %convolution b/w two signals
 
 %signal 1
-n= 0:15;
 x = [(n)>=0] - [(n-5)>=0]; 
 
 %signal 2
@@ -11,6 +10,7 @@ x1 = [1 2 3 4 5];
 
 y = conv(x,x1);
 
+n = 0:9; %Sum of lower limits to sum of Upper limits
 
 subplot(221);title("Signal 1");stem(n,x);xlabel("Time");ylabel("amplitude");
 
