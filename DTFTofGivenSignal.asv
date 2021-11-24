@@ -1,0 +1,6 @@
+clc; clear all; close all;
+W = [0:1:500]*pi/500 ; %0 TO PI DIVIDED INTO 501 VALUES
+
+X = exp(-j*W)./(exp(-j.*W) - 0.5)
+
+ 
